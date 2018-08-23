@@ -1,0 +1,61 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+header{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+*{
+    font-family: serif;
+    color: lightslategray;
+}
+
+.login {
+    padding-top:30px;
+    padding-right: 80px;
+    float: right;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.icon{
+    height: 150px
+}
+
+.iframe {
+    text-align: center;
+    padding-top:50px;
+}
+
+.loginform {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 30px;
+}
+
+input[type=text]{
+    width:400px;
+    height:30px;
+    font-size:30px;
+}
+input[type=password]{
+    width:200px;
+    height:30px;
+    font-size:30px;
+}
+input#submit_button {
+    padding: 10px 40px;
+    font-size: 30px;
+    font-family: serif;
+    color: lightslategray;
+}
+
+.newaccount {
+    text-decoration: none;
+}

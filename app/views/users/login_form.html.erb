@@ -1,0 +1,19 @@
+<% provide(:title, 'Login') %>
+<header>
+    <%= image_tag("tailorlogoclearwhite.png", class: "icon", :height => "150") %>
+</header>
+<div class="loginform">
+    <% if @error_message %>
+        <div class="form-error">
+            <%= @error_message %>
+        </div>
+    <% end %>
+    <%= form_tag("/login") do %>
+        <p>mail</p>
+        <input name="mail" type="text" class="mail"　style="width:200px;height:50px;">
+        <p>pass</p>
+        <input name="pass" type="password"><br><br>
+        <input id="submit_button" type="submit" value="log in"><br><br>
+    <% end %>
+    <%= link_to("新規登録","/account", class: "newaccount") %>
+</div>
