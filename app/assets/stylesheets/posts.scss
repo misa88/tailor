@@ -1,3 +1,38 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+div#menu {
+	display:inline;			/*IE6のマージン算出のバグ対策*/
+	float:left;			/*サブメニューのカラムを左寄せにする*/
+    font-family: serif;
+}
+
+/*サブメニューのボディ部分（余白調整・背景画像・背景色）*/
+ul#menu_body {
+	background-color:black;
+    height: 2000px;
+    width: 65%;
+    float: left;
+}
+.icon{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 90%;
+}
+ul#menu_body li {
+	font-size:140%;			
+	list-style-type:none;		/*リストマーカー無しにする*/
+    	display:inline;			/*リスト項目をインライン表示にする*/
+}
+ul#menu_body li a {
+	display:block;			/*リンクをブロック表示にする*/
+	margin:0px 0px 5%;
+    padding-left: 15%;/*サブメニュー項目のマージン*/
+	text-decoration:none;		/*リンクの下線を無くす*/
+    color: gainsboro
+}
+ul#menu_body li a:hover {
+	background-color:white;
+    color: black;/*リンクにマウスが乗ったら色を変える*/
+}
