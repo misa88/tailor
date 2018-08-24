@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   get '/' => 'users#top'
   get '/top_recruit' => 'users#top_recruit'
   get '/login' => 'users#login_form'
-  get '/mypage' => 'users#mypage'
+  get '/mypage' => 'posts#mypage'
   post '/login' => 'users#login'
 end

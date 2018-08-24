@@ -8,9 +8,6 @@ class UsersController < ApplicationController
   def login_form
   end
   
-  def mypage
-  end
-  
   def login
       @user = User.find_by(email: params[:mail], password: params[:pass])
       if @user
